@@ -26,7 +26,7 @@
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,15 +48,21 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="content-wrapper">
+        <div class="content">
         {{{body}}}
         </div>
-        <div class="col-md-offset-1 col-md-3">
+        <div class="sidebar">
             <h1>Sidebar</h1>
         </div>
     </div>
 </div><!-- /.container -->
+
+<div class="footer">
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</div>
 
 {{ghost_foot}}
 <script src="{{asset "js/site.js"}}"></script>

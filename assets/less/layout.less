@@ -1,4 +1,42 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   padding-top: 50px;
+  margin-bottom: @footer-height;
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @footer-height;
+  background-color: @navbar-default-bg;
+
+  > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.content-wrapper {
+  .row();
+  > div {
+    height: 100%;
+  }
+
+  .content {
+    .make-md-column(6);
+  }
+
+  .sidebar {
+    .make-md-column(3);
+    .make-md-column-offset(1);
+    height: 100%;
+    border-left: 2px solid @brand-primary;
+  }
 }
 
