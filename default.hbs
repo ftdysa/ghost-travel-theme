@@ -13,10 +13,7 @@
     <meta name="description" content="{{meta_description}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans:700,400" />
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -26,8 +23,8 @@
 
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -35,36 +32,40 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">Marilyn & Fred's Big Day Off</a>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Subscribe</a></li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="content-wrapper">
-        <div class="content">
-        {{{body}}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="background"></div>
+            <div class="text">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/waypoints">Waypoints</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul class="nav nav-sidebar">
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Night life</a></li>
+            </ul>
+            </div>
         </div>
-        <div class="sidebar">
-            <h1>Sidebar</h1>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            {{{body}}}
         </div>
-    </div>
-</div><!-- /.container -->
-
-<div class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
     </div>
 </div>
-
 {{ghost_foot}}
 <script src="{{asset "js/site.js"}}"></script>
+
 </body>
 </html>
