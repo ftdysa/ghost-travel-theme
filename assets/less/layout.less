@@ -1,5 +1,5 @@
 body {
-  padding-top: 100px;
+  padding-top: 300px;
   margin-bottom: @footer-height;
   height: 100%;
 }
@@ -20,7 +20,7 @@ body {
 @media(min-width: @screen-md-min) {
   .sidebar {
     position: fixed;
-    top: 101px;
+    top: 301px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -34,7 +34,7 @@ body {
 
     .text {
       position: absolute;
-      top:101;
+      top:301;
       left:0;
       width: 100%;
       heigt: 100%;
@@ -74,10 +74,35 @@ body {
 .navbar-default {
   border-bottom: 1px solid @brand-primary;
   padding-left: 5px;
-  padding-right: 30px;
+  background: url(/assets/images/background.png) no-repeat;
 
-  .navbar-brand {
+  > .container-fluid {
+    padding-right: 30px;
+  }
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+
+.navbar-header {
+  .logo {
+    .btn();
+    .navbar-btn();
+
+    border: 1px solid @brand-warning;
+    background-color: #fff;
     color: @brand-warning;
+    border-radius: 0;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    &:hover, &:active {
+      color: #fff;
+      background-color: @brand-info;
+      border-color: @brand-info;
+    }
   }
 }
 
@@ -112,6 +137,10 @@ body {
   background-color: #fff;
   color: @brand-warning;
   border-radius: 0;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  padding: 10px;
 
   &:hover, &:active {
     color: #fff;
