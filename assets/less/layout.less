@@ -28,7 +28,7 @@ body {
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto;
-    border-right: 1px solid #eee;
+    border-right: 1px solid @brand-primary;
 
     .text {
       position: absolute;
@@ -62,13 +62,15 @@ body {
     padding-right: 20px;
     padding-left: 20px;
 
-    font-weight: bold;
-
     &:hover, &:focus {
       color: #fff;
       background-color: darken(@brand-primary, 15%);
     }
   }
+}
+
+.navbar-default {
+  border-bottom: 2px solid @brand-primary;
 }
 
 .main {
@@ -77,6 +79,10 @@ body {
   .page-header {
     margin-top: 0;
   }
+}
+
+.blog {
+  width: 800px;
 }
 
 @media(min-width: @screen-sm-min) {

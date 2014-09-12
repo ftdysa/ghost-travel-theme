@@ -37,6 +37,7 @@ gulp.task('build-js', function() {
 
 gulp.task('dev', ['build-less', 'build-js'], function() {
    var less_watcher = gulp.watch([
+       'assets/less/font-awesome/*.less',
        'assets/less/bootstrap/*.less',
        'assets/less/*.less'
    ], ['build-less']);
