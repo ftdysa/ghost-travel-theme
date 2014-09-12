@@ -1,5 +1,5 @@
 body {
-  padding-top: 300px;
+  padding-top: 400px;
   margin-bottom: @footer-height;
   height: 100%;
 }
@@ -17,10 +17,15 @@ body {
   display: none;
 }
 
+.main-content-wrapper {
+    .make-row();
+    margin-right: 0px;
+}
+
 @media(min-width: @screen-md-min) {
   .sidebar {
     position: fixed;
-    top: 301px;
+    top: 401px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -34,7 +39,7 @@ body {
 
     .text {
       position: absolute;
-      top:301;
+      top:401;
       left:0;
       width: 100%;
       heigt: 100%;
