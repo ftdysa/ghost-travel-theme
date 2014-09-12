@@ -79,8 +79,6 @@ body {
   .navbar-brand {
     color: @brand-warning;
   }
-
-
 }
 
 .main {
@@ -105,4 +103,19 @@ body {
 .google-map {
   width: 100%;
   height: @screen-sm-min;
+}
+
+.nav > li > a.subscribe-btn {
+  .btn();
+  .navbar-btn();
+  border: 1px solid @brand-warning;
+  background-color: #fff;
+  color: @brand-warning;
+  border-radius: 0;
+
+  &:hover, &:active {
+    color: #fff;
+    background-color: @brand-info;
+    border-color: @brand-info;
+  }
 }
