@@ -54,3 +54,5 @@ gulp.task('dev', ['build-less', 'build-js'], function() {
        console.log('File ' + e.path + ' was ' + e.type + ', running tasks ...');
    });
 });
+
+gulp.task('build', ['build-less', 'build-js']);
