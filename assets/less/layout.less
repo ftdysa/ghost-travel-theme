@@ -1,5 +1,4 @@
 body {
-  margin-bottom: @footer-height;
   height: 100%;
 }
 
@@ -77,21 +76,6 @@ body {
       .pull-left();
       margin-top: 0;
     }
-
-    a.subscribe-btn {
-      .btn();
-      border: 1px solid @brand-warning;
-      background-color: #fff;
-      color: @brand-warning;
-      border-radius: 0;
-      padding: 10px;
-      .pull-right();
-      &:hover, &:active {
-        color: #fff;
-        background-color: @brand-info;
-        border-color: @brand-info;
-      }
-    }
   }
 }
 
@@ -153,4 +137,11 @@ body {
   color: @gray-light;
   text-align: center;
   border-top: 1px solid @brand-primary;
+}
+
+.home {
+  i {
+    .fa();
+    &:before { content: @fa-var-home }
+  }
 }
