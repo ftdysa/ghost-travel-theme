@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var less = require('gulp-less');
+var minify = require('gulp-minify-css');
+var uglify = require('gulp-uglify');
 
 var less_paths = [
     'assets/less/site.less'
@@ -26,12 +28,14 @@ var js_paths = [
 gulp.task('build-less', function() {
     return gulp.src(less_paths)
         .pipe(less())
+        .pipe(minify())
         .pipe(gulp.dest('assets/css/'));
 });
 
 gulp.task('build-js', function() {
     return gulp.src(js_paths)
         .pipe(concat('site.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('assets/js'));
 });
 
