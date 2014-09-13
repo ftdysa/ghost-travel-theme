@@ -1,18 +1,12 @@
 {{!< default}}
 
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
-
 <nav class="main-nav clearfix">
     <a class="home" href="{{@blog.url}}"><i></i> Home</a>
 </nav>
 
-<main class="blog" role="main">
-
+<main role="main">
     <article class="{{post_class}}">
-        {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
-
             <header class="post-header">
                 <h1 class="post-title">
                     {{title}}
@@ -25,8 +19,7 @@
             </section>
 
             <footer class="post-footer">
-                {{! Everything inside the #author tags pulls data from the author }}
-                {{#author}}
+                 {{#author}}
 
                     {{#if image}}
                         <figure class="author-image">
@@ -73,10 +66,7 @@
                         </span>
                     </a>
                 </section>
-
             </footer>
-
         {{/post}}
     </article>
-
 </main>
