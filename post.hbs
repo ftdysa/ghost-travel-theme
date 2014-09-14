@@ -10,8 +10,9 @@
             <header class="post-header">
                 <h1 class="post-title">
                     {{title}}
-                    <small><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}</small>
+                    <small><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></small>
                 </h1>
+                <div class="post-tags">{{tags prefix="Tagged with: "}}</div>
             </header>
 
             <section class="post-content">
