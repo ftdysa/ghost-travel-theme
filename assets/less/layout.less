@@ -4,6 +4,25 @@
 }
 
 // Header
+// Hide mobile header until we are tablet sized where sidebar is hidden
+.mobile-nav {
+  .responsive-invisibility();
+
+  .container {
+    padding-left: 40px;
+  }
+
+  .container > .navbar-header > .navbar-toggle {
+    .pull-left();
+  }
+}
+
+@media (max-width: @screen-md-min) {
+  .mobile-nav {
+    .responsive-visibility();
+  }
+}
+
 .travel-header {
   border-bottom: 1px solid @brand-primary;
   background: url(@header-background-image) no-repeat;
@@ -63,6 +82,11 @@
       color: #fff;
       background-color: lighten(@brand-primary, 15%);
     }
+  }
+
+  > .active > a {
+    color: #fff;
+    background-color: lighten(@brand-primary, 15%);
   }
 }
 

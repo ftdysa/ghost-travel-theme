@@ -1,9 +1,6 @@
 <div id="affixed-sidebar" class="sidebar">
     <ul class="nav nav-sidebar nav-sidebar-first">
-        <li class="active"><a href="/"><i class="fa fa-home fa-fw"></i> Home</a></li>
-        <li><a href="/about"><i class="fa fa-users fa-fw"></i> About</a></li>
-        <li><a href="/waypoints"><i class="fa fa-map-marker fa-fw"></i> Waypoints</a></li>
-        <li><a href="{{@blog.url}}/rss/"><i class="fa fa-fw fa-thumbs-up"></i> Subscribe</a></li>
+        {{> "nav-items"}}
     </ul>
     <h4>Tags</h4>
     <ul class="nav nav-sidebar tags-sidebar">
